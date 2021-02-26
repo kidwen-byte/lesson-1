@@ -1,0 +1,403 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+ol {
+  list-style: revert;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.box__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header {
+  background-color: #445162;
+  padding: 20px 0px;
+}
+
+.header__h1 {
+  padding-bottom: 40px;
+  font-size: 60px;
+  color: white;
+}
+
+.header__check {
+  color: white;
+  font-size: 20px;
+}
+
+.header__check::before {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Solid';
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.header__check:not(:last-of-type) {
+  padding-bottom: 10px;
+}
+
+.header__img {
+  width: 430px;
+  height: 245px;
+}
+
+.about {
+  padding: 45px 0px 50px 0px;
+}
+
+.about__wrapper {
+  font-size: 16px;
+  line-height: 24px;
+  width: 646px;
+}
+
+.about__h2 {
+  padding-bottom: 17px;
+  font-size: 30px;
+}
+
+.about p {
+  margin-bottom: 11px;
+}
+
+.about__img {
+  width: 430px;
+  height: 245px;
+}
+
+.pluses {
+  padding: 25px 0px 0px 0px;
+  background-color: #F5F5F5;
+}
+
+.pluses__h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.pluses .plus {
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-bottom: 35px;
+}
+
+.pluses .plus:last-child {
+  margin-bottom: 50px;
+}
+
+.pluses .plus svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 6px 6px 0 0;
+}
+
+.screenshots {
+  padding: 25px 0px 50px 0px;
+}
+
+.screenshots__h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 45px;
+}
+
+.screenshots__wrapper {
+  width: 49%;
+}
+
+.screenshots figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.screenshots figure:not(:last-of-type) {
+  margin-bottom: 27px;
+}
+
+.screenshots figure img {
+  width: 202px;
+  height: 154px;
+}
+
+.screenshots figure figcaption {
+  margin-left: 15px;
+  line-height: 24px;
+}
+
+.screenshots__h3 {
+  font-size: 24px;
+  padding-bottom: 13px;
+}
+
+.reviews {
+  padding: 25px 0px 42px 0px;
+  background-color: #F5F5F5;
+}
+
+.reviews__h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.reviews__wrapper {
+  width: 49%;
+}
+
+.reviews figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews figure:not(:last-of-type) {
+  margin-bottom: 22px;
+}
+
+.reviews figure img {
+  width: 66px;
+  height: 66px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+.reviews figure figcaption {
+  border-radius: 5px;
+  background-color: #EBEBEB;
+  margin-left: 15px;
+  line-height: 24px;
+  line-height: 18px;
+}
+
+.reviews figure figcaption blockquote {
+  padding: 16px 15px 0px 10px;
+  font-size: 14px;
+  font-style: italic;
+  position: relative;
+}
+
+.reviews figure figcaption blockquote::before {
+  content: '';
+  position: absolute;
+  -webkit-clip-path: polygon(0 50%, 100% 100%, 100% 0);
+          clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  background-color: #ebebeb;
+  width: 15px;
+  right: 100%;
+  top: 50px;
+  height: 30px;
+}
+
+.reviews figure figcaption blockquote .signature {
+  color: #989898;
+  padding: 10px 0px 5px 0px;
+}
+
+.price {
+  padding: 45px 0px 50px 0px;
+}
+
+.price__h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 26px;
+}
+
+.price__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.price__item {
+  width: 300px;
+  background-color: #445161;
+  padding: 13px 2px 19px 2px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.price__item.premium {
+  margin: 0 45px 0 45px;
+}
+
+.price__header {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+.price__cash {
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+  padding: 25px 0 16px 0;
+  margin-bottom: 8px;
+}
+
+.price__content {
+  padding: 0 20px 0;
+}
+
+.price__content ol {
+  padding-bottom: 16px;
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
+}
+
+.price__content ol li {
+  margin-left: 20px;
+}
+
+.price__buy {
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  height: 43px;
+}
+
+.contacts {
+  padding: 25px 0 43px 0;
+  background-color: #445162;
+}
+
+.contacts__h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 43px;
+  color: white;
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts form {
+  width: 500px;
+}
+
+.contacts form input {
+  display: block;
+  margin-bottom: 18px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  height: 43px;
+  padding-left: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contacts form textarea {
+  margin-bottom: 18px;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contacts form button {
+  text-align: center;
+  width: 30%;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  height: 43px;
+  display: block;
+  margin: auto;
+}
+
+.contacts-info {
+  margin-left: 45px;
+  color: white;
+}
+
+.contacts-info p {
+  margin-bottom: 43px;
+}
+
+.contacts-info p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.contacts-info svg {
+  margin-right: 5px;
+}
+
+.contacts-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts .fab {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  color: #445162;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  margin: 0px 4px;
+}
+
+.copyright {
+  padding: 13px 0 12px 0;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+}
+/*# sourceMappingURL=style.css.map */

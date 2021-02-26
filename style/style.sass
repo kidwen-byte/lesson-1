@@ -1,0 +1,252 @@
+body
+    font-family: Arial, sans-serif
+
+ol
+    list-style: revert
+
+.container
+    max-width: 1170px
+    margin: 0 auto
+
+.box__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.header
+    background-color: #445162
+    padding: 20px 0px
+    &__h1
+        padding-bottom: 40px
+        font-size: 60px
+        color: white
+    &__check
+        color: white
+        font-size: 20px
+        &::before
+            content: '\f00c'
+            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Solid'
+            font-weight: 900
+            width: 100px
+            height: 100px
+            margin-right: 10px
+        &:not(:last-of-type)
+            padding-bottom: 10px
+    &__img
+        width: 430px
+        height: 245px
+
+.about
+    padding: 45px 0px 50px 0px
+    &__wrapper
+        font-size: 16px
+        line-height: 24px
+        width: 646px
+    &__h2
+        padding-bottom: 17px
+        font-size: 30px
+    & p
+        margin-bottom: 11px
+    &__img
+        width: 430px
+        height: 245px
+
+.pluses
+    padding: 25px 0px 0px 0px
+    background-color: #F5F5F5
+    &__h2
+        text-align: center
+        font-size: 30px
+        padding-bottom: 25px
+    .plus
+        line-height: 24px
+        display: flex
+        width: 50%
+        margin-bottom: 35px
+        &:last-child
+            margin-bottom: 50px
+        svg
+            flex-shrink: 0
+            padding: 6px 6px 0 0
+
+.screenshots
+    padding: 25px 0px 50px 0px
+    &__h2
+        text-align: center
+        font-size: 30px
+        padding-bottom: 45px
+    &__wrapper
+        width: 49%
+    figure
+        display: flex
+        &:not(:last-of-type)
+            margin-bottom: 27px
+        img
+            width: 202px
+            height: 154px
+        figcaption
+            margin-left: 15px
+            line-height: 24px
+    &__h3
+        font-size: 24px
+        padding-bottom: 13px
+
+.reviews
+    padding: 25px 0px 42px 0px
+    background-color: #F5F5F5
+    &__h2
+        text-align: center
+        font-size: 30px
+        padding-bottom: 30px
+    &__wrapper
+        width: 49%
+    figure
+        display: flex
+        &:not(:last-of-type)
+            margin-bottom: 22px
+        img
+            width: 66px
+            height: 66px
+            clip-path: circle(50% at 50% 50%)
+        figcaption
+            border-radius: 5px
+            background-color: #EBEBEB
+            margin-left: 15px
+            line-height: 24px
+            line-height: 18px
+            blockquote
+                padding: 16px 15px 0px 10px
+                font-size: 14px
+                font-style: italic
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    clip-path: polygon(0 50%, 100% 100%, 100% 0)
+                    background-color: #ebebeb
+                    width: 15px
+                    right: 100%
+                    top: 50px
+                    height: 30px
+                & .signature
+                    color: #989898
+                    padding: 10px 0px 5px 0px
+
+.price
+    padding: 45px 0px 50px 0px
+    &__h2
+        text-align: center
+        font-size: 30px
+        padding-bottom: 26px
+    &__wrapper
+        display: flex
+        justify-content: center
+        align-items: flex-end
+    &__item
+        width: 300px
+        background-color: #445161
+        padding: 13px 2px 19px 2px
+        border-radius: 5px
+        box-sizing: border-box
+        &.premium
+            margin: 0 45px 0 45px
+    &__header
+        text-align: center
+        color: white
+        font-size: 24px
+        padding-bottom: 8px
+    &__cash
+        font-size: 30px
+        text-align: center
+        background-color: white
+        padding: 25px 0 16px 0
+        margin-bottom: 8px
+    &__content
+        padding: 0 20px 0
+        & ol
+            padding-bottom: 16px
+            font-size: 14px
+            color: white
+            line-height: 24px
+            & li
+                margin-left: 20px
+    &__buy
+        width: 100%
+        background-color: white
+        border: none
+        border-radius: 5px
+        font-size: 18px
+        font-weight: 700
+        outline: none
+        height: 43px
+
+.contacts
+    padding: 25px 0 43px 0
+    background-color: #445162
+    &__h2
+        text-align: center
+        font-size: 30px
+        padding-bottom: 43px
+        color: white
+    &__wrapper
+        display: flex
+        justify-content: center
+    & form
+        width: 500px
+        & input
+            display: block
+            margin-bottom: 18px
+            width: 100%
+            background-color: white
+            border: none
+            border-radius: 5px
+            height: 43px
+            padding-left: 12px
+            box-sizing: border-box
+        & textarea
+            margin-bottom: 18px
+            width: 100%
+            resize: none
+            border-radius: 5px
+            padding: 12px
+            box-sizing: border-box
+        & button
+            text-align: center
+            width: 30%
+            background-color: white
+            border: none
+            border-radius: 5px
+            font-size: 18px
+            font-weight: 700
+            outline: none
+            height: 43px
+            display: block
+            margin: auto
+    &-info
+        margin-left: 45px
+        color: white
+        & p
+            margin-bottom: 43px
+            &:not(:last-of-type)
+                margin-bottom: 20px
+        & svg
+            margin-right: 5px
+    &-icon
+        display: flex
+    & .fab
+        clip-path: circle(50% at 50% 50%)
+        color: #445162
+        background-color: white
+        width: 45px
+        height: 45px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 24px
+        margin: 0px 4px
+
+.copyright
+    padding: 13px 0 12px 0
+    font-size: 12px
+    text-align: center
+    line-height: 24px
